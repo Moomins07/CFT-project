@@ -125,13 +125,13 @@ q {
   quotes: none;
 }
 
-blockquote:before,
+/* blockquote:before,
 blockquote:after,
 q:before,
 q:after {
   content: "";
   content: none;
-}
+} */
 
 table {
   border-collapse: collapse;
@@ -359,12 +359,12 @@ sup {
   top: -0.5rem;
 }
 
-blockquote {
+/* blockquote {
   border-left: solid 4px #ffffff;
   font-style: italic;
   margin: 0 0 2rem 0;
   padding: 0.5rem 0 0.5rem 2rem;
-}
+} */
 
 code {
   background: rgba(255, 255, 255, 0.075);
@@ -1281,7 +1281,7 @@ button {
   z-index: 1;
 }
 
-body.is-article-visible #bg:after {
+/* body.is-article-visible #bg:after {
   -moz-transform: scale(1.0825);
   -webkit-transform: scale(1.0825);
   -ms-transform: scale(1.0825);
@@ -1290,7 +1290,7 @@ body.is-article-visible #bg:after {
   -webkit-filter: blur(0.2rem);
   -ms-filter: blur(0.2rem);
   filter: blur(0.2rem);
-}
+} */
 
 body.is-preload #bg:before {
   background-color: #000000;
@@ -1521,7 +1521,7 @@ body.is-preload #bg:before {
   border-left: 0;
 }
 
-body.is-article-visible #header {
+/* body.is-article-visible #header {
   -moz-transform: scale(0.95);
   -webkit-transform: scale(0.95);
   -ms-transform: scale(0.95);
@@ -1531,7 +1531,7 @@ body.is-article-visible #header {
   -ms-filter: blur(0.1rem);
   filter: blur(0.1rem);
   opacity: 0;
-}
+} */
 
 body.is-preload #header {
   -moz-filter: blur(0.125rem);
@@ -1787,7 +1787,7 @@ body.is-preload #footer {
 
 /* ----------------- CARDS BELOW ------------------------ */
 
-body {
+/* body {
   /* Created with https://www.css-gradient.com */
   background: #3a6eff6c;
   /* background: -webkit-radial-gradient(top right, #5349df, #9eaace);
@@ -1893,19 +1893,23 @@ body {
 
 
 
-
-.container-one {
+.container-body,
+.container-one,
+.container-two {
   width:100%;
   height:100%;
+  
 }
 
 
 .page-one,
  .page-two {
-  width: 99%;
+  width: 100%;
   height: 100%;
-  width: 99vw;
+  width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
   
 
 }
@@ -1913,6 +1917,7 @@ body {
 
 nav {
  z-index: 3;
+ max-width: 100%;
 }
 
 a {
@@ -1922,3 +1927,4 @@ a {
 #header {
   position: absolute;
 }
+
