@@ -56,13 +56,13 @@
         </button>
         <div class="collapse navbar-collapse col-sm-12 col-xs-6" id="expandme">
           <div class="navbar-nav text-right">
-            <a href="Changeme" class="nav-item nav-link">About</a>
-            <a href="Changeme" class="nav-item nav-link">Contact</a>
-            <a href="Changeme" class="nav-item nav-link">Mobile sim</a>
-            <a href="Changeme" class="nav-item nav-link">Test</a>
-            <a href="Changeme" class="nav-item nav-link">Hello</a>
-            <a href="Changeme" class="nav-item nav-link">Yes</a>
-            <a href="Changeme" class="nav-item nav-link">Maybe</a>
+            <a href="Changeme" class="nav-item nav-link">Sim Practice</a>
+            <a href="Changeme" class="nav-item nav-link">VIP Simulator Visits</a>
+            <a href="Changeme" class="nav-item nav-link">Flight Simulator</a>
+            <a href="Changeme" class="nav-item nav-link">School Presentations</a>
+            <a href="Changeme" class="nav-item nav-link">Flying with Confidence</a>
+            <a href="Changeme" class="nav-item nav-link">Becoming a Pilot</a>
+            <a href="Changeme" class="nav-item nav-link">Pilot Log-in</a>
           </div>
         </div>
       </nav>
@@ -84,7 +84,11 @@
       </div>
 
       <div class="d-flex justify-content-center arrow-container mb-5">
-      <i class="fa fa-solid fa-arrow-down fa-2x"></i>
+
+        <!-- BASIC INLINE-JAVASCRIPT TO SCROLL TO  PANEL 2 ON ARROW CLICK-->
+        <span class ="fa fa-solid fa-arrow-down fa-2x" onClick="document.getElementById('panel2').scrollIntoView({ block: 'end',  behavior: 'smooth' });">
+        
+      
 </div>
     
       
@@ -105,7 +109,7 @@
       <!--- CARDS --->
   
           
-          <div class="container panel">
+          <div class="container panel" id="panel2">
             <div class="card-container">
             <div class="row justify-content-around">
               <div class="col text-center mb-5 ">
@@ -303,48 +307,13 @@
           </div>
       
       <div id="bg-colour-pg2" class="panel">
-        <div class="page2-container d-flex justify-content-center align-items-center">
+        <div class="container page2-container d-flex justify-content-center align-items-center">
 
         
 
-      <div class="container pt-3 px-0 ">
-        <div class="row text-dark">
-          
-          <!-- WHO ARE WE? -->
-          <div class="pg2Sections col-lg-4 text-dark ">
-            <div class="div card-icon"> 
-            <i class="fa fa-solid fa-address-card fa-3x pl-2 d-flex justify-content-center"></i></div>
-            <div class="card-box">
-            <h3 class="display-5 text-dark mt-3 pl-2 text-center">Who Are We? </h3>
-
-           <ul class="who-are-we pl-0 text-center"> 
-            <li>Capt. Carley Lear - Boeing 787</li>
-            <li>Capt. Martin Hockfield - Airbus A320</li>
-            <li>Capt. Ruth Smith - Boeing 777</li>
-            <li>Sen. First Officer Clifford Agius - Boeing 787</li>
-            <li>Sen. First Officer Catriona Hurley - Boeing 787 </li></ul>
-          </div></div>
-          <!-- WHAT WE DO. -->
-          <div class="pg2Sections col-lg-4 text-dark text-center justify-content-center">
-            <i class="fa fa-solid fa-handshake fa-3x pl-2 d-flex justify-content-center"></i>
-              <h3 class="display-5 text-dark mt-3">What We Do</h3>
-             
-          <p class="">The Flight Operations Customer
-            First Team is a team of pilots that
-            provide a unique customer
-            focused service, offering
-            specialised Flight Simulator. </p>
-          </div>
-          <!-- CONTACT US -->
-          <div class="pg2Sections col-lg-4 text-dark text-center">
-            <i class="fa fa-solid fa-phone fa-3x  d-flex justify-content-center"></i>
-            <h3 class="display-5 text-dark mt-3">Contact Us </h3>
-          <p>CustomerFirstTeam@ba.com</p>
-          </div>
-        </div>
-</div>
+     
    <!----- CAROUSEL IMAGES ------->
-   <div id="carouselExampleIndicators" class="carousel slide col-lg-6 p-0 d-none d-sm-block" data-ride="carousel">
+   <div id="carouselExampleIndicators" class="carousel slide col-lg-11 p-0 d-none d-sm-block" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -369,6 +338,43 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+  </div>
+</div>
+<div class="container pt-3 pr-3 ">
+  <div class="row text-dark">
+    
+    <!-- WHAT WE DO. -->
+    <div class="pg2Sections col-lg-4 col-xs-6 pr-5 pl-5 text-dark text-center justify-content-center">
+      <i class="fa fa-solid fa-handshake fa-3x pl-2 d-flex justify-content-center"></i>
+        <h3 class="display-5 text-dark mt-3">What We Do</h3>
+       
+    <p class="col-xs-12">The Flight Operations Customer
+      First Team is a team of pilots that
+      provide a unique customer
+      focused service, offering
+      specialised Flight Simulator. </p>
+    </div>
+     <!-- WHO ARE WE? -->
+     <div class="pg2Sections col-lg-4 text-dark pl-0">
+      <div class="div card-icon"> 
+      <i class="fa fa-solid fa-address-card fa-3x pl-2 d-flex justify-content-center"></i></div>
+      <div class="card-box">
+      <h3 class="display-5 text-dark mt-3 pl-2 text-center">Who Are We? </h3>
+
+     <ul class="who-are-we pl-0 text-center"> 
+      <li>Capt. Carley Lear - Boeing 787</li>
+      <li>Capt. Martin Hockfield - Airbus A320</li>
+      <li>Capt. Ruth Smith - Boeing 777</li>
+      <li>Sen. First Officer Clifford Agius - Boeing 787</li>
+      <li>Sen. First Officer Catriona Hurley - Boeing 787 </li></ul>
+    </div></div>
+    <!-- CONTACT US -->
+    <div class="pg2Sections col-lg-4 text-dark text-center">
+      <i class="fa fa-solid fa-phone fa-3x  d-flex justify-content-center"></i>
+      <h3 class="display-5 text-dark mt-3">Contact Us </h3>
+    <p>CustomerFirstTeam@ba.com</p>
+    </div>
+    
   </div>
 </div>
       <!-- Footer -->

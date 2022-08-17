@@ -1098,6 +1098,7 @@ h4.card-title {
 
 .fa.fa-solid.fa-arrow-down:hover {
   cursor: pointer;
+  color: rgb(18, 34, 70);
 }
 
 .who-are-we li {
