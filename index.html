@@ -25,24 +25,10 @@
       
       <!--NAV BAR-->
 
-      <nav class="navbar navbar-dark justify-content-between">
-        <ul class="icons col-xs-6 col-md-6 col">
-          <li>
-            <a href="#" class="icon brands fa-twitter"
-              ><span class="label">Twitter</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-facebook-f"
-              ><span class="label">Facebook</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-instagram"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-        </ul>
+      <nav class="navbar navbar-dark">
+        
+        <img src="/images/CFT-Logo.png" alt="Customer First Logo" class="cft-logo d-none d-lg-block d-xl-none d-none d-xl-block">
+        <img src="/images/CFT-Logo cropped.png" alt="Customer First Logo Cropped" class="cft-logo-cropped d-block d-sm-none d-none d-sm-block d-md-none d-none d-md-block d-lg-none">
 
         <button
           class="navbar-toggler"
@@ -86,7 +72,7 @@
       <div class="d-flex justify-content-center arrow-container mb-5">
 
         <!-- BASIC INLINE-JAVASCRIPT TO SCROLL TO  PANEL 2 ON ARROW CLICK-->
-        <span class ="fa fa-solid fa-arrow-down fa-2x" onClick="document.getElementById('panel2').scrollIntoView({ block: 'end',  behavior: 'smooth' });">
+        <span class ="fa fa-solid fa-arrow-down fa-2x arrow1" onClick="document.getElementById('panel2').scrollIntoView({ block: 'end',  behavior: 'smooth' });">
         
       
 </div>
@@ -98,7 +84,7 @@
         id="bg"
         class="panel"
         style="
-          background-image: url(/images/homepage.jpg);
+          background-image: url(@Model.Value("bgImage"));
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -110,38 +96,38 @@
   
           
           <div class="container panel" id="panel2">
+            <div class="text-center mb-3 ">
+
+              <h2 class="display-5 text-dark mt-4">
+                @Model.Value("page2Title")
+              </h2>
+              <p class="lead text-dark mb-3">@Model.Value("page2Content")</p>
+              
+            </div>
             <div class="card-container">
             <div class="row justify-content-around">
-              <div class="col text-center mb-5 ">
-
-                <h2 class="display-5 text-dark mt-4">
-                  @Model.Value("page2Title")
-                </h2>
-                <p class="lead text-dark mb-3">@Model.Value("page2Content")</p>
-                
-              </div>
             </div>
 
             <div class="row">
+          
               <!-- CARD ONE -->
 
               <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div
                   class="card text-white card-has-bg click-col"
-                  style="background-image: url('/images/plane\ sim1.jpg')"
+                  style="background-image: url(/images/G-EUYD_British_Airways_Airbus_A320-232_cn3726_takeoff_from_Schiphol_\(AMS_-_EHAM\)\,_The_Netherlands_pic2.jpg)"
                 >
                   <img
                     class="card-img d-none"
-                    src="https://source.unsplash.com/600x900/?tech,street"
+                    src="@Model.Value("cardImage1")"
                     alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?"
                   />
                   <div class="card-img-overlay d-flex flex-column">
                     <div class="card-body">
-                      <small class="card-meta mb-2">Sim Practise</small>
+                      <small class="card-meta mb-2">@Model.Value("card1Title")</small>
                       <h4 class="card-title mt-0">
                         <a class="text-white" herf="#"
-                          >Continuous professional development for our pilot
-                          community</a
+                          >@Model.Value("card1Content")</a
                         >
                       </h4>
                      
@@ -158,7 +144,7 @@
               <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div
                   class="card text-white card-has-bg click-col"
-                  style="background-image: url('/images/plane\ sim1.jpg')"
+                  style="background-image: url('@Model.Value("cardImage2")')"
                 >
                   <img
                     class="card-img d-none"
@@ -168,12 +154,11 @@
                   <div class="card-img-overlay d-flex flex-column">
                     <div class="card-body">
                       <small class="card-meta mb-2"
-                        >V.I.P Simulator visits</small
+                        >@Model.Value("card2Title")</small
                       >
                       <h4 class="card-title mt-0">
                         <a class="text-white" herf="#"
-                          >Corporate full motion simulator visits arranged out
-                          our Heathrow Headquarters.
+                          >@Model.Value("card2Content")
                         </a>
                       </h4>
                       <!-- <small
@@ -189,7 +174,7 @@
               <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div
                   class="card text-white card-has-bg click-col"
-                  style="background-image: url('/images/plane\ sim1.jpg')"
+                  style="background-image: url('@Model.Value("cardImage3")')"
                 >
                   <img
                     class="card-img d-none"
@@ -198,11 +183,10 @@
                   />
                   <div class="card-img-overlay d-flex flex-column">
                     <div class="card-body">
-                      <small class="card-meta mb-2">Flight Simulator</small>
+                      <small class="card-meta mb-2">@Model.Value("card3Title")</small>
                       <h4 class="card-title mt-0">
                         <a class="text-white" herf="#"
-                          >Our very own mobile Flight Simulator we can take
-                          anywhere in the U.K.</a
+                          >@Model.Value("card3Content")</a
                         >
                       </h4>
                       <!-- <small
@@ -218,7 +202,7 @@
               <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div
                   class="card text-white card-has-bg click-col"
-                  style="background-image: url('/images/plane\ sim1.jpg')"
+                  style="background-image: url('@Model.Value("cardImage4")')"
                 >
                   <img
                     class="card-img d-none"
@@ -227,11 +211,10 @@
                   />
                   <div class="card-img-overlay d-flex flex-column">
                     <div class="card-body">
-                      <small class="card-meta mb-2">School Presentations</small>
+                      <small class="card-meta mb-2">@Model.Value("card4Title")</small>
                       <h4 class="card-title mt-0">
                         <a class="text-white" herf="#"
-                          >Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Ipsa, dolor!</a
+                          >@Model.Value("card4Content")</a
                         >
                       </h4>
                       <!-- <small
@@ -247,7 +230,7 @@
               <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div
                   class="card text-white card-has-bg click-col"
-                  style="background-image: url('/images/plane\ sim1.jpg')"
+                  style="background-image: url('@Model.Value("cardImage5")')"
                 >
                   <img
                     class="card-img d-none"
@@ -257,12 +240,11 @@
                   <div class="card-img-overlay d-flex flex-column">
                     <div class="card-body">
                       <small class="card-meta mb-2"
-                        >Flying with Confidence</small
+                        >@Model.Value("card5Title")</small
                       >
                       <h4 class="card-title mt-0">
                         <a class="text-white" herf="#"
-                          >Lorem ipsum dolor sit, amet consectetur adipisicing
-                          elit. Perferendis, beatae!</a
+                          >@Model.Value("card5Content")</a
                         >
                       </h4>
                       <!-- <small
@@ -278,7 +260,7 @@
               <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div
                   class="card text-white card-has-bg click-col"
-                  style="background-image: url('/images/plane\ sim1.jpg')"
+                  style="background-image: url('@Model.Value("cardImage6")')"
                 >
                   <img
                     class="card-img d-none"
@@ -287,11 +269,10 @@
                   />
                   <div class="card-img-overlay d-flex flex-column">
                     <div class="card-body">
-                      <small class="card-meta mb-2">Becoming a Pilot</small>
+                      <small class="card-meta mb-2">@Model.Value("card6Title")</small>
                       <h4 class="card-title mt-0">
                         <a class="text-white" herf="#"
-                          >Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Similique, totam?</a
+                          >@Model.Value("card6Content")</a
                         >
                       </h4>
                       <!-- <small
@@ -303,13 +284,15 @@
               </div>
             </div>
             </div>
-            <p class="lead text-dark mb-3 text-center mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat commodi error possimus ut, natus aliquam impedit temporibus repudiandae obcaecati facilis.</p>
+            <!-- <p class="lead text-dark mb-3 text-center mt-5 mb-5">@Model.Value("page2BtmParagraph")</p> -->
+            
+            <div class="arrow-container2">
+            <div class ="fa fa-solid fa-arrow-down fa-2x mt-1 arrow2" onClick="document.getElementById('bg-colour-pg2').scrollIntoView({ block: 'end',  behavior: 'smooth' });"></div>
+          </div>
           </div>
       
-      <div id="bg-colour-pg2" class="panel">
+      <div id="bg-colour-pg2" class="panel d-flex flex-column justify-content-around">
         <div class="container page2-container d-flex justify-content-center align-items-center">
-
-        
 
      
    <!----- CAROUSEL IMAGES ------->
@@ -321,13 +304,13 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100 rounded" src="/images/plane sim1.jpg" alt="First slide">
+        <img class="d-block w-100 rounded" src="@Model.Value("carouselImage1")" alt="First slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100 rounded" src="/images/plane sim1.jpg" alt="Second slide">
+        <img class="d-block w-100 rounded" src="@Model.Value("carouselImage2")" alt="Second slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100 rounded" src="/images/plane sim1.jpg" alt="Third slide">
+        <img class="d-block w-100 rounded" src="@Model.Value("carouselImage3")" alt="Third slide">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -340,42 +323,61 @@
     </a>
   </div>
 </div>
-<div class="container pt-3 pr-3 ">
+
+<footer>
+<div class="container pt-3 pr-3 footer">
   <div class="row text-dark">
     
     <!-- WHAT WE DO. -->
     <div class="pg2Sections col-lg-4 col-xs-6 pr-5 pl-5 text-dark text-center justify-content-center">
       <i class="fa fa-solid fa-handshake fa-3x pl-2 d-flex justify-content-center"></i>
-        <h3 class="display-5 text-dark mt-3">What We Do</h3>
+        <h3 class="display-5 text-dark mt-3">@Model.Value("whatWeDoTitle")</h3>
        
-    <p class="col-xs-12">The Flight Operations Customer
-      First Team is a team of pilots that
-      provide a unique customer
-      focused service, offering
-      specialised Flight Simulator. </p>
+    <p class="col-xs-12">@Model.Value("whatWeDoContent")</p>
     </div>
      <!-- WHO ARE WE? -->
-     <div class="pg2Sections col-lg-4 text-dark pl-0">
+     <div class="pg2Sections col-lg-4 text-dark pl-0 pr-0">
       <div class="div card-icon"> 
       <i class="fa fa-solid fa-address-card fa-3x pl-2 d-flex justify-content-center"></i></div>
       <div class="card-box">
-      <h3 class="display-5 text-dark mt-3 pl-2 text-center">Who Are We? </h3>
+      <h3 class="display-5 text-dark mt-3 pl-2 text-center">@Model.Value("whoAreWeTitle")</h3>
 
      <ul class="who-are-we pl-0 text-center"> 
-      <li>Capt. Carley Lear - Boeing 787</li>
-      <li>Capt. Martin Hockfield - Airbus A320</li>
-      <li>Capt. Ruth Smith - Boeing 777</li>
-      <li>Sen. First Officer Clifford Agius - Boeing 787</li>
-      <li>Sen. First Officer Catriona Hurley - Boeing 787 </li></ul>
+      <li>@Model.Value("whoAreWeList1")</li>
+      <li>@Model.Value("whoAreWeList2")</li>
+      <li>@Model.Value("whoAreWeList3")</li>
+      <li>@Model.Value("whoAreWeList4")</li>
+      <li>@Model.Value("whoAreWeList5")</li></ul>
     </div></div>
     <!-- CONTACT US -->
     <div class="pg2Sections col-lg-4 text-dark text-center">
       <i class="fa fa-solid fa-phone fa-3x  d-flex justify-content-center"></i>
-      <h3 class="display-5 text-dark mt-3">Contact Us </h3>
-    <p>CustomerFirstTeam@ba.com</p>
+      <h3 class="display-5 text-dark mt-3">@Model.Value("contactUsTitle")</h3>
+    <p>@Model.Value("contactUsContent")</p>
     </div>
-    
+
+    <div class="icon-container d-flex justify-content-center">
+    <ul class="icons">
+      <li>
+        <a href="#" class="icon brands fa-twitter"
+          ><span class="label">Twitter</span></a
+        >
+      </li>
+      <li>
+        <a href="#" class="icon brands fa-facebook-f"
+          ><span class="label">Facebook</span></a
+        >
+      </li>
+      <li>
+        <a href="#" class="icon brands fa-instagram"
+          ><span class="label">Instagram</span></a
+        >
+      </li>
+    </ul>
   </div>
+
+  </div>
+</footer>
 </div>
       <!-- Footer -->
       <!-- <footer id="footer">

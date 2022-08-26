@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Customer First Team</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/77106f27cc.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <link rel="stylesheet" href="/assets/css/main.css" /> -->
+  </head>
+  <body>
+    <!--NAV BAR -->
+
+    <nav class="navbar navbar-expand-xl bg-dark navbar-dark">
+      <div class="container">
+        <!-- <a href="#" class="navbar-brand">CFT Logo here</a> -->
+        <img src="/images/CFT-Logo cropped.png" alt="Customer First Logo Cropped" class="">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Sim Practice</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">VIP Simulator visits</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Flight Simulator</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">School Presentations</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Flying with Confidence</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Becoming a Pilot</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN SECTION -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img
+              src="https://www.nasa.gov/sites/default/files/thumbnails/image/flightsim.jpg"
+              class="img-fluid rounded"
+              alt="Sim practice"
+            />
+          </div>
+          <div class="col-md p-5">
+            <h2>Sim Practice</h2>
+            <p class="lead">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore,
+              ut. Numquam accusantium eum molestiae mollitia!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
+              earum exercitationem quas non nobis deserunt expedita et eius,
+              velit impedit? Alias voluptas nulla ipsum distinctio voluptates ea
+              voluptatum rem laudantium.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p class="lead">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore,
+              ut. Numquam accusantium eum molestiae mollitia!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
+              earum exercitationem quas non nobis deserunt expedita et eius,
+              velit impedit? Alias voluptas nulla ipsum distinctio voluptates ea
+              voluptatum rem laudantium. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Unde, quisquam!
+            </p>
+          </div>
+          <div class="col-md">
+            <img
+              src="https://www.freevector.com/uploads/vector/preview/27412/Iconic-Mineral-Vectors-3.jpg"
+              class="img-fluid rounded"
+              alt="Sim practice"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <section class="p-5 bg-light text-dark">
+        <div class="container">
+          <div class="row align-items-top justify-content-between">
+            <!-- WHAT WE DO -->
+            <div class="col-lg-4 p-2">
+              <i
+                class="fa-solid fa-handshake fa-3x d-flex justify-content-center"
+              ></i>
+              <h4 class="display-5 text-dark mt-3 text-center">
+                @Model.Value("whatWeDoTitle")
+              </h4>
+              <p class="col-xs-12 text-center">@Model.Value("whatWeDoContent")</p>
+            </div>
+            <!-- WHO ARE WE -->
+            <div class="col-lg-4 p-2">
+              <i
+                class="fa fa-solid fa-address-card fa-3x d-flex justify-content-center"
+              ></i>
+              <h4 class="display-5 text-dark mt-3 pl-2 text-center">
+                @Model.Value("whoAreWeTitle")
+              </h4>
+              <ul class="who-are-we pl-0 text-center list-unstyled">
+                <li>@Model.Value("whoAreWeList1")</li>
+                <li>@Model.Value("whoAreWeList2")</li>
+                <li>@Model.Value("whoAreWeList3")</li>
+                <li>@Model.Value("whoAreWeList4")</li>
+                <li>@Model.Value("whoAreWeList5")</li>
+              </ul>
+            </div>
+
+            <!-- CONTACT US -->
+            <div class="col-lg-4 p-2">
+              <i class="fa fa-solid fa-phone fa-3x  d-flex justify-content-center"></i>
+              <h4 class="display-5 text-dark mt-3 text-center">@Model.Value("contactUsTitle")</h4>
+            <p class="text-center">@Model.Value("contactUsContent")</p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
