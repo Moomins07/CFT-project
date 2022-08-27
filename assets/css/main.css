@@ -672,6 +672,7 @@ body.is-preload #bg:before {
   -ms-justify-content: space-between;
   justify-content: center;
   position: relative;
+  top: -115px;
   height: 90vh;
   width: 100%;
   padding: 4rem 2rem;
@@ -681,6 +682,7 @@ body.is-preload #bg:before {
 #wrapper:before {
   content: "";
   display: block;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1680px) {
@@ -919,7 +921,7 @@ body.is-preload #header .content .inner {
   background-position: center center;
 }
 
-.card-has-bg::before {
+/* .card-has-bg::before {
   content: "";
   position: absolute;
   top: 0;
@@ -932,7 +934,7 @@ body.is-preload #header .content .inner {
   -ms-filter: grayscale(0%);
   -o-filter: grayscale(0%);
   filter: grayscale(0%);
-}
+} */
 
 .card-has-bg:hover {
   transform: scale(0.98);
@@ -958,8 +960,12 @@ body.is-preload #header .content .inner {
 
 .card-img-overlay {
   transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.068) 0%, rgb(0, 0, 0) 160%);
+  /* background: rgb(0, 0, 0); */
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 59%,
+    rgba(255, 255, 255, 0.795) 60%
+  );
 }
 
 @media (max-width: 767px) {
@@ -1023,7 +1029,7 @@ h4.card-title {
 }
 
 .navbar-collapse {
-  position: absolute;
+  position: relative;
   width: 98%;
   top: 100%;
 }
@@ -1054,7 +1060,7 @@ h4.card-title {
 }
 
 #bg-colour-pg2 {
-  background-color: #ececec96;
+  background-color: #c0c0c079;
   padding: 0;
   margin: 0;
   height: auto;
@@ -1145,14 +1151,38 @@ h4.card-title {
   width: 100%;
 }
 
-.cft-logo {
-  align-items: flex-start;
+.cft-logo-cropped {
+  max-width: 30%;
 }
 
-a:hover {
-  color: rgb(255, 255, 255) !important;
+.hidden {
+  display: none;
 }
 
 .navbar-nav a {
-  color: #ffffff;
+  color: white !important;
+  display: inline-block;
+  position: relative;
+}
+
+/* .navbar-nav a:hover {
+  color: #ffffff !important;
+} */
+
+.navbar-nav a:after {
+  content: "";
+  position: absolute;
+  width: 12%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  right: 0;
+  background-color: #3369ff;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar-nav a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
 }
