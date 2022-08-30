@@ -22,7 +22,7 @@
 
   <body class="is-preload">
     <div class="container-fluid position-relative">
-      
+      <div class="container d-flex flex-column panel justify-content-between">
       <!--NAV BAR-->
 
       <nav class="navbar navbar-dark">
@@ -56,6 +56,7 @@
       </nav>
 
       <!-- Wrapper -->
+     
       <div id="wrapper" class="main-content pb-0 ">
      
         <!-- Header -->
@@ -78,7 +79,7 @@
         
       
 </div>
-    
+</div>
       
       <!-- BG -->
 
@@ -97,28 +98,37 @@
       <!--- CARDS --->
   
           
-          <div class="container panel" id="panel2">
-            <div class="text-center mb-3 ">
+          <div class="container panel p-0" id="panel2">
+            <!-- <div class="text-center mb-3 ">
 
               <h2 class="display-5 text-dark mt-4">
                 @Model.Value("page2Title")
               </h2>
               <p class="lead text-dark mb-3">@Model.Value("page2Content")</p>
               
-            </div>
-            <div class="card-container">
-            <div class="row justify-content-around">
-            </div>
+            </div> -->
 
-            <div class="row">
+            
+            <div class="container mt-2">
+            
+            
+
+            <div class="row justify-content-center">
           
               <!-- CARD ONE -->
-
-
+              <div class="cardBox col-xs-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="card card-has-bg p-0">
+                <img class="card-img-top" src="/images/homepage.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">Lorem, ipsum dolor.</h5>
+                  <p class="card-text text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque beatae nobis, sint saepe magnam laudantium.</p>
+                </div>
+              </div>
+              </div>
               
 
-
-              <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
+             
+              <!-- <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div
                   class="card text-dark card-has-bg click-col"
                   style="background-image: url(/images/G-EUYD_British_Airways_Airbus_A320-232_cn3726_takeoff_from_Schiphol_\(AMS_-_EHAM\)\,_The_Netherlands_pic2.jpg)"
@@ -130,24 +140,25 @@
                   />
                   <div class="card-img-overlay d-flex flex-column">
                     <div class="card-body d-flex flex-column justify-content-end p-0">
-                      <small class="card-meta mb-2 text-dark">@Model.Value("card1Title")</small>
-                      <h4 class="card-title mt-0">
-                        <a class="text-dark" herf="#"
-                          >@Model.Value("card1Content")</a
-                        >
-                      </h4>
-                     
-                      <!-- <small
-                        ><i class="far fa-clock"></i> October 15, 2020</small
-                      > -->
+                      <h4 class="mb-2 text-dark">@Model.Value("card1Title")</h4>
+                      
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!-- CARD TWO -->
+              <div class="cardBox col-xs-12 col-sm-6 col-md-6 col-lg-4 mb-1">
+              <div class="card card-has-bg p-0">
+                <img class="card-img-top" src="/images/G-EUYD_British_Airways_Airbus_A320-232_cn3726_takeoff_from_Schiphol_(AMS_-_EHAM),_The_Netherlands_pic2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">Lorem, ipsum dolor.</h5>
+                  <p class="card-text text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque beatae nobis, sint saepe magnam laudantium.</p>
+                </div>
+              </div>
+              </div>
 
-              <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
+              <!-- <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div
                   class="card text-white card-has-bg click-col"
                   style="background-image: url('@Model.Value("cardImage2")')"
@@ -161,22 +172,28 @@
                     <div class="card-body d-flex flex-column justify-content-end p-0">
                       <small class="card-meta mb-2 text-dark">@Model.Value("card2Title")</small>
                       <h4 class="card-title mt-0">
-                        <a class="text-dark" herf="#"
+                        <a class="text-dark" href="#"
                           >@Model.Value("card2Content")</a
                         >
                       </h4>
                      
-                      <!-- <small
-                        ><i class="far fa-clock"></i> October 15, 2020</small
-                      > -->
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!-- CARD THREE -->
-
-              <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
+              <div class="cardBox col-xs-12 col-sm-6 col-md-6 col-lg-4 mb-1">
+              <div class="card card-has-bg p-0">
+                <img class="card-img-top" src="/images/homepage.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">Lorem, ipsum dolor.</h5>
+                  <p class="card-text text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque beatae nobis, sint saepe magnam laudantium.</p>
+                </div>
+              </div>
+              </div>
+            
+              <!-- <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div
                   class="card text-white card-has-bg click-col"
                   style="background-image: url('@Model.Value("cardImage3")')"
@@ -195,17 +212,24 @@
                         >
                       </h4>
                      
-                      <!-- <small
-                        ><i class="far fa-clock"></i> October 15, 2020</small
-                      > -->
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!-- CARD FOUR -->
+            <!-- <div class="row justify-content-center"> -->
 
-              <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
+              <div class="cardBox col-xs-12 col-sm-6 col-md-6 col-lg-4 mb-1">
+              <div class="card card-has-bg p-0">
+                <img class="card-img-top" src="/images/homepage.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">Lorem, ipsum dolor.</h5>
+                  <p class="card-text text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque beatae nobis, sint saepe magnam laudantium.</p>
+                </div>
+              </div>
+            </div>
+              <!-- <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div
                   class="card text-white card-has-bg click-col"
                   style="background-image: url('@Model.Value("cardImage4")')"
@@ -224,17 +248,23 @@
                         >
                       </h4>
                      
-                      <!-- <small
-                        ><i class="far fa-clock"></i> October 15, 2020</small
-                      > -->
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!-- CARD FIVE -->
+              <div class="cardBox col-xs-12 col-sm-6 col-md-6 col-lg-4 mb-1">
+              <div class="card card-has-bg p-0">
+                <img class="card-img-top" src="/images/homepage.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">Lorem, ipsum dolor.</h5>
+                  <p class="card-text text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque beatae nobis, sint saepe magnam laudantium.</p>
+                </div>
+              </div>
+              </div>
 
-              <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
+              <!-- <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div
                   class="card text-white card-has-bg click-col"
                   style="background-image: url('@Model.Value("cardImage5")')"
@@ -252,18 +282,25 @@
                           >@Model.Value("card5Content")</a
                         >
                       </h4>
-                     
-                      <!-- <small
-                        ><i class="far fa-clock"></i> October 15, 2020</small
-                      > -->
+
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!-- CARD SIX -->
-
-              <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
+              <div class="cardBox col-xs-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="card card-has-bg p-0">
+                <img class="card-img-top" src="/images/homepage.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">Lorem, ipsum dolor.</h5>
+                  <p class="card-text text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque beatae nobis, sint saepe magnam laudantium.</p>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!-- </div> -->
+              <!-- <div class="cardBox col-sm-6 col-md-6 col-lg-4 mb-4">
                 <div
                   class="card text-white card-has-bg click-col"
                   style="background-image: url('@Model.Value("cardImage6")')"
@@ -281,16 +318,16 @@
                           >@Model.Value("card6Content")</a
                         >
                       </h4>
-                     
-                      <!-- <small
-                        ><i class="far fa-clock"></i> October 15, 2020</small
-                      > -->
+
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            </div>
+            </div> -->
+            
+          
+            
+          </div>
             <!-- <p class="lead text-dark mb-3 text-center mt-5 mb-5">@Model.Value("page2BtmParagraph")</p> -->
             
             <div class="arrow-container2">
